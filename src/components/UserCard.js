@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const UserCard = ({user}) => {
     const { id, username, email, image} = user
-    console.log(user)
+  
     return (
         <>
          
