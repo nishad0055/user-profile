@@ -4,14 +4,17 @@ import { useParams } from "react-router-dom";
 import bg from "../assets/images/bg-blue.jpg";
 
 const UserDetails = () => {
-  const { users } = useContext(userContext);
+  const { users, loading } = useContext(userContext);
   const { id } = useParams();
   const user = users.users?.find((user) => user.id === parseInt(id, 10));
 
-  console.log(user);
 
+
+  if (loading) {
+    return <div>loading...</div>;
+  }
   if (!user) {
-    return <div>User not found</div>;
+    return <div>user not found</div>;
   }
 
   return (

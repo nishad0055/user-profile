@@ -7,9 +7,7 @@ const UserCard = ({ user }) => {
   return (
     <>
       <div className="w-full md:max-w-xs ">
-        <Link
-          to={`user/${id}`}
-          className="block    transition-all duration-500 ">
+        <Link to={`user/${id}`} className="block transition-all duration-500 ">
           <div className="bg-white  rounded-lg py-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  relative hover:shadow-none">
             <div className="image-wrapper">
               <img
@@ -28,13 +26,8 @@ const UserCard = ({ user }) => {
                 email: {email}{" "}
               </p>
             </div>
-            <div class="text-lg text-white font-bold text-center my-3 w-full h-full -top-10 left-0 absolute flex items-center flex-col justify-center bg-[rgba(0,0,255,0.4)] opacity-0 transition-all rounded-lg duration-500 hover:opacity-100 hover:duration-500 hover:top-0">
+            <div class="text-lg text-white font-bold text-center my-3 w-full h-full -top-10 left-0 absolute flex items-center flex-col justify-center bg-[rgba(0,0,255,0.5)] opacity-0 transition-all rounded-lg duration-500 hover:opacity-100 hover:duration-500 hover:top-0">
               <p>View Profile</p>
-              {/* <Link
-                to={`user/${id}`}
-                className=" hover:underline hover:text-indigo-600 font-medium">
-                View Profile
-              </Link> */}
             </div>
           </div>
         </Link>
