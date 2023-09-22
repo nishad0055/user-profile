@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./UserCard.css";
 
 const UserCard = ({ user }) => {
   const { id, username, email, image } = user;

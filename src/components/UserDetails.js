@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { userContext } from "../context-api/UserProvider";
 import { useParams } from "react-router-dom";
-import bg from "../assets/images/blue-bg.jpg";
+import bg from "../assets/images/bg-blue.jpg";
 
 const UserDetails = () => {
   const { users } = useContext(userContext);
@@ -17,9 +17,15 @@ const UserDetails = () => {
   return (
     <div className="relative">
       <div>
-        <img className="w-full h-52" src={bg} alt="" />
+        <div className="relative">
+          <img className="w-full h-72" src={bg} alt="" />
+          <div class="absolute inset-0 bg-[rgba(0,0,0,.4)]"></div>
+          <h2 className="flex justify-center items-center text-5xl top-0 left-0 flex-col w-full h-full absolute text-white font-bold">
+            {user.firstName} Details info
+          </h2>
+        </div>
 
-        <div className="relative -top-14 left-0 right-0">
+        <div className="relative -top-20 left-0 right-0">
           <div className="flex justify-center mx-auto">
             <div className="bg-white  rounded-lg p-5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]  w-full md:w-1/2">
               <div className="image-wrapper">
