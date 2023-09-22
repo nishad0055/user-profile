@@ -23,7 +23,7 @@ const UserCard = ({ user }) => {
                 {" "}
                 Username: {username}{" "}
               </p>
-              <p className="text-center text-base text-gray-600 text-gray-900 font-medium">
+              <p className="text-center text-base text-gray-600 font-medium">
                 {" "}
                 email: {email}{" "}
               </p>
