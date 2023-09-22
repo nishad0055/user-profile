@@ -1,25 +1,10 @@
 // src/App.js
-import React from 'react';
-import UserDetails from './components/UserDetails';
-import UserList from './components/UserList';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import { route } from "./routes/route";
 
 function App() {
-    const router  = createBrowserRouter([ 
-      {
-        path:'/', element: <UserList></UserList>
-      },
-      {
-        path: '/user/:id', element: <UserDetails></UserDetails>
-      }
-
-    ])
-  return (
-     <RouterProvider router={ router} >
-
-     </RouterProvider>
-  );
+  return <RouterProvider router={route}></RouterProvider>;
 }
 
 export default App;
-
