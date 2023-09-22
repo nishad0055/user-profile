@@ -11,7 +11,7 @@ const UserList = () => {
 
   return (
     <div className="container mx-auto my-14">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mx-auto">
         {users.users.map((user) => (
           <UserCard key={user.id} user={user} />
         ))}

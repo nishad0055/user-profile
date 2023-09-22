@@ -7,7 +7,7 @@ const UserCard = ({ user }) => {
 
   return (
     <>
-      <div className="max-w-xs ">
+      <div className="w-full md:max-w-xs ">
         <Link
           to={`user/${id}`}
           className="block    transition-all duration-500 ">
