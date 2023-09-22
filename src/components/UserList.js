@@ -11,7 +11,7 @@ const UserList = () => {
   }
 
   return (
-    <div className="">
+    <div>
       <Hero />
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12 mx-auto container my-14 ">
         {users.users.map((user) => (

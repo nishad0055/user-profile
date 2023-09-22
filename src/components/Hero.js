@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <div className="relative">
         <img className="w-full h-screen" src={heroImg} alt="" />
-        <div class="absolute inset-0 bg-[rgba(0,0,0,.4)]"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 opacity-50"></div>
       </div>
     </>
   );

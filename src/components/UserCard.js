@@ -28,7 +28,7 @@ const UserCard = ({ user }) => {
                 email: {email}{" "}
               </p>
             </div>
-            <div class="text-lg text-white font-bold text-center my-3 w-full h-full -top-10 left-0 absolute flex items-center flex-col justify-center bg-[rgba(0,0,0,0.4)] opacity-0 transition-all rounded-lg duration-500 hover:opacity-100 hover:duration-500 hover:top-0">
+            <div class="text-lg text-white font-bold text-center my-3 w-full h-full -top-10 left-0 absolute flex items-center flex-col justify-center bg-[rgba(0,0,255,0.4)] opacity-0 transition-all rounded-lg duration-500 hover:opacity-100 hover:duration-500 hover:top-0">
               <p>View Profile</p>
               {/* <Link
                 to={`user/${id}`}
